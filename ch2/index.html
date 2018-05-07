@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #fancy {
+            background-color: grey;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../node_modules/react/umd/react.production.min.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="../node_modules/babel-standalone/babel.min.js"></script>
+    <title>Getting Started with React</title>
+</head>
+<body>
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+
+        class Hello extends React.Component {
+            render() {
+                return (
+                    <div id="fancy">
+                        <h1>Hello World</h1>
+                    </div>
+                )
+            }
+        }
+        
+        ReactDOM.render(
+            <Hello />,
+            document.getElementById('react-container')
+        )
+    
+    
+    </script>
+
+</body>
+</html>
